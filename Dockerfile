@@ -10,6 +10,7 @@ RUN sudo apt-get update && sudo apt-get install apt-transport-https -y && \
     sudo apt-get update && \
     sudo apt-get install -y \
     dotnet-sdk-2.1 && \
+    sudo apt-get install -y azure-functions-core-tools && \
     sudo apt-get -y clean && \
     sudo rm -rf /var/lib/apt/lists/* && \
     mkdir -p ${CSHARP_LS_DIR}
